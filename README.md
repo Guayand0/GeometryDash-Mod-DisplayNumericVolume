@@ -1,2 +1,2 @@
-# GeometryDash-Mod-DisplayNumericVolume
-Add number value to Volume and SFX
+# Display Numeric Volume
+Show numeric Music and SFX volume values

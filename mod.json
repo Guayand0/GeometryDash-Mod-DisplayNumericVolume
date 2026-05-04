@@ -1,0 +1,47 @@
+{
+	"geode": "5.7.1",
+	"gd": {
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081"
+	},
+	"id": "guayand0.display-numeric-volume",
+	"name": "Display Numeric Volume",
+	"version": "v1.0.0",
+	"developer": "Guayand0",
+	"description": "Add volume number value to Music and SFX",
+	"links": {
+		"source": "https://github.com/Guayand0/GeometryDash-Mod-DisplayNumericVolume",
+		"community": "https://discord.gg/RDaTJqdwMS"
+	},
+	"tags": [
+		"interface",
+		"offline",
+		"enhancement"
+	],
+	"settings": {
+		"general-title": {
+			"type": "title",
+			"name": "General"
+		},
+		"mod-enabled": {
+			"type": "bool",
+			"name": "Enable Mod",
+			"description": "Enable or disable the volume number value system completely",
+			"default": true
+		},
+		"decimal-places": {
+			"type": "int",
+			"name": "Decimal Places",
+			"description": "How many decimals to show for Music and SFX values",
+			"default": 2,
+			"min": 0,
+			"max": 3,
+			"enable-if": "mod-enabled"
+		}
+	},
+	"dependencies": {
+		"geode.node-ids": ">=v1.23.3"
+	}
+}
