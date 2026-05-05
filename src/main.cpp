@@ -19,7 +19,8 @@ namespace {
     constexpr char const* kSfxLabelID = "guayand0.display-numeric-volume/sfx-label";
 
     int getDecimalPlaces() {
-        return std::clamp(Mod::get()->getSettingValue<int64_t>("decimal-places"), 0ll, 3ll);
+        auto const decimalPlaces = Mod::get()->getSettingValue<int64_t>("decimal-places");
+        return static_cast<int>(std::clamp<int64_t>(decimalPlaces, int64_t{0}, int64_t{3}));
     }
 
     std::string formatSliderValue(Slider* slider) {

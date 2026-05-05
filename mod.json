@@ -8,7 +8,7 @@
 	},
 	"id": "guayand0.display-numeric-volume",
 	"name": "Display Numeric Volume",
-	"version": "v1.0.0",
+	"version": "1.0.1",
 	"developer": "Guayand0",
 	"description": "Add volume number value to Music and SFX",
 	"links": {
